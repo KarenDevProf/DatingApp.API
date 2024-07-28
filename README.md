@@ -1,46 +1,60 @@
 # DatingApp
 
-Docker is used in the project.
+В проекте используется Docker.
 
-Run the project in Docker.
-Download Docker Desktop application  https://docs.docker.com/desktop/install/windows-install/
+Запуск проекта в Docker.
+Скачайте приложение Docker Desktop: https://docs.docker.com/desktop/install/windows-install/
 
-Download Repo and run DatingApp.API.sln file .
+Скачайте репозиторий и запустите файл DatingApp.API.sln.
 
 ---------------------------------------------------------------
 
-# Method #1 You can also run the project
+# Метод #1: Запуск проекта без использования Docker
 
-1) Set startup project DatingApp.API project
+1) Установите стартап-проект DatingApp.API.
+2) Запустите DatingApp.API.
 
-2) Run DatingApp.API
+Swagger будет доступен по адресу https://localhost:5001/swagger/index.html.
+База данных будет создана в вашем локальном MSSQL.
 
-  Swagger starts at  https://localhost:5001/swagger/index.html
-    
- The database is created in your local MSSQL
+![image](https://github.com/user-attachments/assets/3d56a9ef-a694-4077-bed1-f1f777850918)
 
 
-# Method #2 for run application using Docker
+# Метод #2: Запуск приложения с использованием Docker
 
-1) Set startup project docker-compose , and run it Docker Compose
-2) After opening the Swagger starts at  http://localhost:8010/swagger/index.html
+1) Установите стартап-проект docker-compose и запустите его через Docker Compose.
+2) После запуска Swagger будет доступен по адресу http://localhost:8010/swagger/index.html.
+
+ ![image](https://github.com/user-attachments/assets/08bd68a4-c8be-4780-bb49-8222c5825092)
+
  
+# Метод #3: Запуск приложения с использованием Docker
  
-# Method #3 for run application using Docker
+1) Откройте вкладку Developer Powershell в нижней части Visual Studio. Введите команду:
  
-1) Open the Developer Powershell tab at the bottom of Visual Studio.. Enter the command
- 
- for build
+ для сборки:
 "docker-compose build"
 
-for run in Docker Desktop application 
+для запуска в приложении Docker Desktop:
 "docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d"
 
+Вы увидите экземпляры, backend и MSSQL DB. Например:
 
-You will see instance , backend and MSSQL DB 
-for example ..
-![image](https://user-images.githubusercontent.com/46989769/229551315-5437592c-495d-41f1-97e9-59c57057d27b.png)
+![image](https://github.com/user-attachments/assets/380874e7-bf0d-47db-8255-3286a7b9a3e3)
 
-Swagger starts at  http://localhost:8010/swagger/index.html
+Swagger будет доступен по адресу http://localhost:8010/swagger/index.html.
+
+# Итог
+Приложение будет запускаться также на Docker.
+
+База будет автоматически заполняться тестовыми данными в localDb.
+
+Я добавил фильтрацию по возрасту, указывая не точный возраст, а интервал возрастов. Должен быть указан хотя бы один возраст.
+
+Добавил поля для имени, фамилии и email пользователя при регистрации. Email должен быть уникальным для каждого пользователя.
+
+В дальнейшем предлагаю добавить авторизацию и аутентификацию, используя JWT токен.
 
 
+
+  
