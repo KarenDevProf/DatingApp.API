@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  datingappdb:
+   image: mcr.microsoft.com/mssql/server:2022-latest
+
+  datingapp.api:
+    image: ${DOCKER_REGISTRY-}datingappapi
+    build:
+      context: .
+      dockerfile: DatingAppAPI/DatingApp.API/Dockerfile

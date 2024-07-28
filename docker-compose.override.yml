@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  datingappdb:
+   container_name: datingappdb
+   environment:
+     SA_PASSWORD: "SwN12345678"
+     ACCEPT_EULA: "Y"
+     restart: always
+   ports:
+   - "1433:1433"
+
+  datingapp.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
+      - "ConnectionStrings:DatingAppConnectionString=Server=datingappdb;Database=DatingApp;User Id=sa;Password=SwN12345678;Encrypt=True;TrustServerCertificate=True;"
+      - ASPNETCORE_URLS=http://+:80
+    depends_on:
+    - datingappdb
+    ports:
+    - "8010:80"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

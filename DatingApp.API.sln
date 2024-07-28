@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatingApp.API", "DatingAppAPI\DatingApp.API\DatingApp.API.csproj", "{2FA6F9B3-B37A-4C7D-9549-80927F8DB8C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatingApp.DAL", "DatingAppAPI\DatingApp.DAL\DatingApp.DAL.csproj", "{07BEB42C-F9C5-4D55-8757-A39957A922B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatingApp.Repositories", "DatingAppAPI\DatingApp.Repositories\DatingApp.Repositories.csproj", "{029E8205-8CF3-4FF8-8F13-6D9B8593F55B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatingApp.BusinessLayer", "DatingAppAPI\DatingApp.BusinessLayer\DatingApp.BusinessLayer.csproj", "{767DE4EC-EC60-41AC-8837-DEADA6AF32AA}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{86FCEFFF-CFFF-460E-BC24-113572361DF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FA6F9B3-B37A-4C7D-9549-80927F8DB8C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA6F9B3-B37A-4C7D-9549-80927F8DB8C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA6F9B3-B37A-4C7D-9549-80927F8DB8C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA6F9B3-B37A-4C7D-9549-80927F8DB8C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07BEB42C-F9C5-4D55-8757-A39957A922B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07BEB42C-F9C5-4D55-8757-A39957A922B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07BEB42C-F9C5-4D55-8757-A39957A922B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07BEB42C-F9C5-4D55-8757-A39957A922B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029E8205-8CF3-4FF8-8F13-6D9B8593F55B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029E8205-8CF3-4FF8-8F13-6D9B8593F55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029E8205-8CF3-4FF8-8F13-6D9B8593F55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029E8205-8CF3-4FF8-8F13-6D9B8593F55B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{767DE4EC-EC60-41AC-8837-DEADA6AF32AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767DE4EC-EC60-41AC-8837-DEADA6AF32AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767DE4EC-EC60-41AC-8837-DEADA6AF32AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767DE4EC-EC60-41AC-8837-DEADA6AF32AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86FCEFFF-CFFF-460E-BC24-113572361DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86FCEFFF-CFFF-460E-BC24-113572361DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86FCEFFF-CFFF-460E-BC24-113572361DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86FCEFFF-CFFF-460E-BC24-113572361DF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC970C16-5638-4444-BE0D-C6C592999EF4}
+	EndGlobalSection
+EndGlobal
